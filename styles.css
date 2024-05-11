@@ -1,0 +1,115 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+body{
+    background-image: url('bg-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.navbar{
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    color: white;
+    background-color: dimgrey;
+}
+.logo{
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Tahoma';
+}
+li{
+    list-style: none;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 25px;
+    margin-top: 15px;
+    position: relative;
+    transition: all 0.4s;
+    font-family: 'Tahoma';
+    cursor: pointer;
+}
+li:hover{
+    color: blue;
+    transition: all 0.1s;
+}
+li::after{
+    content:'';
+    height: 2px;
+    width: 100%;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    opacity: 0;
+    transition: all 0.1s;
+}
+li:hover::after{
+    opacity: 1;
+}
+li:active{
+    color: purple;
+    transition: all 0.1s;
+}
+h2, h3{
+    color: white;
+    text-align: center;
+    font-family:  'Tahoma';
+    font-weight: 400;
+    font-size: 50px;
+}
+h2{
+    margin-top: 150px;
+}
+h3{
+    margin-top: 15px;
+}
+.learn-more{
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    font-family:  'Tahoma';
+    font-weight: bolder;
+    margin-left: 500px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.learn-more:hover{
+    background-color: blue;
+    transition: all 0.7s;
+    cursor: pointer;
+}
+.learn-more:active{
+    background-color: purple;
+    transition: all 0.1s;
+}
+.subscribe{
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 20px;
+    font-family:  'Tahoma';
+    font-weight: bolder;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.subscribe:hover{
+    background-color: blue;
+    transition: all 0.7s;
+    cursor: pointer;
+}
+.subscribe:active{
+    background-color: purple;
+    transition: all 0.1s;
+}
